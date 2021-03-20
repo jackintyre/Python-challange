@@ -38,3 +38,10 @@ print("Total Profits:", total_profit)
 print("Average Change:", round(avg_change,2))
 print("Greatest Increase:", date_inc, greatest_inc)
 print("Greatest Decrease:", date_dec, greatest_dec)
+
+with open("bank.txt",'w',encoding = 'utf-8') as f:
+   f.write("Total Months:"+ str(num_months)+"Months"+"\n")
+   f.write("Total Profits:"+ str(total_profit)+"\n")
+   f.write("Average Change:"+ str(round(avg_change,2))+"\n")
+   f.write("Greatest Increase:"+ str(date_inc) + str(greatest_inc)+"\n")
+   f.write("Greatest Decrease:"+ str(date_dec) + str(greatest_dec))
